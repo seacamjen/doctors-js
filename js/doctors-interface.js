@@ -9,4 +9,10 @@ $(document).ready(function () {
     var info = searchDocs.getDoctor(medicalIssue);
 
   });
+  $('#submitDocName').click(function() {
+    var docName = $('#doctorName').val();
+
+    var searchByDoc = new Doctor();
+    var info = searchByDoc.getDoctorName(docName);
+  });
 });

@@ -13,20 +13,22 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <ul id="conditions">
-
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Enter your symptoms</h3>
+        <h2 class="center">Search by Symptom or Doctor</h2>
+        <div class="col-md-4 col-md-offset-2">
+          <h3>Symptoms</h3>
           <label for="patientIssue">Enter Symptom:</label>
-          <input type="text" id="patientIssue" required autofocus>
-          <button class="btn btn-default pull-right" id="submitIssue">Find Doctors</button>
+          <input type="text" id="patientIssue" required autofocus> <br>
+          <button class="btn btn-default" id="submitIssue">Find Doctors</button>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <h3>Doctor Name</h3>
+          <label for="doctorName">Doctor Name:</label>
+          <input type="text" id="doctorName" required autofocus> <br>
+          <button class="btn btn-default" id="submitDocName">Find Doctors</button>
         </div>
       </div>
     </div>
-    <hr>
+    <br>
     <div class="container">
       <div class="row">
         <div id="doctorResults">
@@ -34,5 +36,6 @@
         </div>
       </div>
     </div>
+    <hr>
   </body>
 </html>
