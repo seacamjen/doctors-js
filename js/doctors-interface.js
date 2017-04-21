@@ -7,5 +7,6 @@ $(document).ready(function () {
 
     var searchDocs = new Doctor();
     var info = searchDocs.getDoctor(medicalIssue);
+
   });
 });

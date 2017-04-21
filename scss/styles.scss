@@ -1,3 +1,6 @@
+$gray : #cbd0d8;
+$blue : #acc6ef;
+
 .jumbotron {
   background-image: url("/images/bannerNurse.jpg");
 }
@@ -6,7 +9,12 @@
   text-align: center;
 }
 
-#doctorResults .col-md-3{
-  padding-top: 5px;
-  border-style: inset;
+
+body {
+  background-color: $gray;
+  #doctorResults .col-md-3{
+    padding-top: 5px;
+    border-style: inset;
+    background: $blue;
+  }
 }
