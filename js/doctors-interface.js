@@ -1,8 +1,18 @@
-var Doctors = require('./../js/doctors.js').doctorsModule;
+var Doctor = require('./../js/doctors.js').doctorModule;
+var apiKey = require('./../.env').apiKey;
 
-$(document).reay(function () {
+$(document).ready(function () {
   $('#submitIssue').click(function() {
-    var patientIssue = $('#patientIssue').val();
+    var medicalIssue = $('#patientIssue').val();
+    console.log(medicalIssue);
+
+    var searchDocs = new Doctor();
+    var info = searchDocs.getDoctor(medicalIssue);
+
+    Promise.all([info]).then(function(values) {
+      $('#doctorResults').text("Here are your results " + info);
+    })
+
 
   });
 });

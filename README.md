@@ -2,7 +2,7 @@
 
 #### _doctors, 04-21-2017_
 
-#### By _**Cameron Jensen and **_
+#### By _**Cameron Jensen**_
 
 ## Description
 _Example text for the description of the project_
