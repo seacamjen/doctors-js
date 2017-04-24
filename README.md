@@ -1,22 +1,26 @@
 # _Doctor Search_
 
-#### _Doctor Search, 04-21-2017_
+#### _04-21-2017_
 
 #### By _**Cameron Jensen**_
 
 ## Description
-_This application allows a user to enter a search of a medical issue and return the doctors within a certain distance_
+_Search for Doctors by simply entering a symptom you are having. This will cut down the time to search through doctors and whether they can treat you. You will also be able to search for a specific doctor that you may be interested in._
+
 
 
 ## Specifications
 
 | Behavior                   | Input Example     | Output Example    |
 | -------------------------- | -----------------:| -----------------:|
-|Enter a search|cough|receive information about doctors that treat cough|
+|Search for doctors to treat an issue|cough|receive information about doctors that treat cough|
 
 ## Contact information
 
 * Contact for questions or comments jensenseanc@gmail.com
+
+## Bugs/Issues
+_There is currently no catch for when results are returned with no information_
 
 ## Setup/Installation Requirements
 
@@ -28,6 +32,9 @@ bower install
 gulp build
 gulp serve
 ```
+* _obtain an api key from https://developer.betterdoctor.com/_
+* _create a file called .env in the top level of the project directory_
+* _in the .env file save exports.apiKey = "enter your api key here"_
 
 ### License
 
